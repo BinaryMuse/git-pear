@@ -5,7 +5,7 @@
   "description": "Set GIT_AUTHOR and GIT_COMMITTER for pairing when committing from Atom",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/git-pear",
+  "repository": "https://github.com/BinaryMuse/git-pear",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -14,11 +14,18 @@
   },
   "configSchema": {
     "pairs": {
-      "description": "A comma-separated list of possible authors, in the format of 'initials;email', e.g. 'mt;michelle@github.com'",
+      "description": "A comma-separated list of possible authors, in the format of 'name;email', e.g. 'Michelle Tilley;michelle@michelletilley.net'",
       "type": "array",
       "default": [""],
       "items": {
         "type": "string"
+      }
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
       }
     }
   }

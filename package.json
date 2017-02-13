@@ -1,7 +1,7 @@
 {
   "name": "git-pear",
   "main": "./lib/git-pear",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Set GIT_AUTHOR and GIT_COMMITTER for pairing when committing from Atom",
   "keywords": [],
   "repository": "https://github.com/BinaryMuse/git-pear",
